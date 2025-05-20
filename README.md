@@ -18,7 +18,7 @@ This is a full-stack chatbot application built using **React.js**, **Supabase**,
   - User Query
   - Chatbot Response
 - Authenticated users can view their previous conversations.
-- 
+
 ---
 
 ## 🛠️ Technologies Used
