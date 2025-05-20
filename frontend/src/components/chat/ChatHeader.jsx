@@ -16,9 +16,9 @@ const ChatHeader = ({ user, onShowApiKeyModal, onLogout, onShowHistoryModal }) =
         <Button variant="ghost" size="icon" onClick={onShowHistoryModal} className="hover:bg-white/10" title="Chat History">
           <History size={20} />
         </Button>
-        <Button variant="ghost" size="icon" onClick={onShowApiKeyModal} className="hover:bg-white/10" title="API Key Settings">
+        {/* <Button variant="ghost" size="icon" onClick={onShowApiKeyModal} className="hover:bg-white/10" title="API Key Settings">
           <Settings size={20} />
-        </Button>
+        </Button> */}
         <Button variant="ghost" size="icon" onClick={onLogout} className="hover:bg-white/10" title="Logout">
           <LogOut size={20} />
         </Button>
