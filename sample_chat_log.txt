@@ -1,0 +1,12 @@
+User: What is the difference between Narrow AI and General AI?
+Chatbot: Narrow AI (Weak AI) is designed for a specific task (e.g., Siri, Google Maps), while General AI (Strong AI) is a theoretical system with generalized human cognitive abilities.
+User: Explain the term “Deep Learning.”
+Chatbot: Deep Learning is a specialized type of Machine Learning that uses neural networks with many layers (e.g., CNNs, RNNs).
+User: What does PCA stand for in the context of ML?
+Chatbot: The provided text states that PCA is an example of an unsupervised learning algorithm, but it does not provide the full name of the acronym PCA.
+User: What is the architecture of the Gemini model?
+Chatbot: Answer is not available in the context.
+User: What is tokenization in NLP?
+Chatbot: Tokenization is the process of converting text into smaller pieces (tokens), often used in NLP.
+User: What are the three types of machine learning?
+Chatbot: The three types of machine learning are supervised, unsupervised, and reinforcement learning.

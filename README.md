@@ -85,6 +85,7 @@ npm run dev
 
 ## Sample Queries & Responses
 - *See:* `sample_chat_log.txt`
+- *For testing:* Use `testing.pdf`
 
 ---
 
