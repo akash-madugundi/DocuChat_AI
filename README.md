@@ -93,3 +93,12 @@ npm run dev
 - Gemini API documentation: https://ai.google.dev
 - Supabase documentation: https://supabase.io/docs
 - FastAPI documentation: https://fastapi.tiangolo.com
+
+---
+
+## PFA-
+- ![image](https://github.com/user-attachments/assets/956ddf43-388a-49f2-a6ef-3948360b852f)
+- ![image](https://github.com/user-attachments/assets/b4163e18-6bd7-485e-8de1-615ae71667b2)
+- ![image](https://github.com/user-attachments/assets/9c7d751e-8632-4f9d-905b-692f6a3a5c92)
+- ![image](https://github.com/user-attachments/assets/1ed65b7f-e873-4d49-92ec-d067b9f4115c)
+- ![image](https://github.com/user-attachments/assets/2e5611f1-5419-40a1-811f-0364614bfc1e)
