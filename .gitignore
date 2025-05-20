@@ -1,0 +1,29 @@
+# Root-level ignores
+*.log
+*.env
+.DS_Store
+
+# Backend (.venv, pycache, faiss_index folder)
+backend/.venv/
+backend/__pycache__/
+backend/**/*.pyc
+backend/**/faiss_index_*/
+
+# Frontend (node_modules, lock files)
+frontend/node_modules/
+frontend/package-lock.json
+frontend/yarn.lock
+frontend/.env.local
+frontend/.env.*.local
+
+# Optional: build output folders (if any)
+frontend/dist/
+frontend/build/
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.iml
+
+# Mac system files
+.DS_Store
