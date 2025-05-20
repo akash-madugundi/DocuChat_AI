@@ -1,6 +1,6 @@
 # DocuChat- Gemini PDF Chatbot with Authentication and Chat History
 This is a full-stack chatbot application built using **React.js**, **Supabase**, and **FastAPI**. It integrates with the **Gemini API** to allow authenticated users to upload PDF documents, ask questions about them, and receive intelligent responses. Chat History is stored for each user.
-
+#### 🌐 Live Demo - [DocuChat AI](https://docuchat-ai-five.vercel.app/)
 ---
 
 ## Features
@@ -18,17 +18,14 @@ This is a full-stack chatbot application built using **React.js**, **Supabase**,
   - User Query
   - Chatbot Response
 - Authenticated users can view their previous conversations.
-### Deployment
-- Frontend deployed on [Vercel](https://docuchat-ai-five.vercel.app/)
-- Backend deployed on [Render](https://docuchat-ai.onrender.com)
-
+- 
 ---
 
 ## 🛠️ Technologies Used
 
 - **Frontend:** React.js, TailwindCSS
 - **Backend:** FastAPI, Uvicorn, Langchain
-- **Auth & DB:** Supabase (PostgreSQL)
+- **Auth & DB:** Supabase
 - **PDF Parsing:** `pdf-parse`
 - **LLM API:** Gemini API (Google Generative AI)
 - **Deployment:** Vercel (frontend), Render (backend)
@@ -79,7 +76,7 @@ npm run dev
 
 #### POST /ask
 - Request: { "question": <any_ques_from_pdf> }
-- Response: { "answer": <response> }
+- Response: { "answer": <corresponding_ans> }
 
 ---
 
@@ -97,7 +94,7 @@ npm run dev
 ---
 
 ## PFA-
-- ![image](https://github.com/user-attachments/assets/956ddf43-388a-49f2-a6ef-3948360b852f)
+- ![image](https://github.com/user-attachments/assets/545e1a2b-430b-4da9-8929-e36d6cde9c89)
 - ![image](https://github.com/user-attachments/assets/b4163e18-6bd7-485e-8de1-615ae71667b2)
 - ![image](https://github.com/user-attachments/assets/9c7d751e-8632-4f9d-905b-692f6a3a5c92)
 - ![image](https://github.com/user-attachments/assets/1ed65b7f-e873-4d49-92ec-d067b9f4115c)
