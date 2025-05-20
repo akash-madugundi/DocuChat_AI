@@ -67,7 +67,7 @@ const ChatPage = () => {
 
   const handleSendMessage = async () => {
     if (!inputValue.trim()) return;
-    if (!geminiApiKey) {
+    if (geminiApiKey) {
       toast({
         title: "API Key Missing",
         description: "Please set your Gemini API key in settings.",
