@@ -14,6 +14,8 @@ import { useChatApi } from "@/hooks/useChatApi";
 import { useChatHistory } from "@/hooks/useChatHistory";
 import { usePdfHandling } from "@/hooks/usePdfHandling";
 
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
+
 const ChatPage = () => {
   const { user, logout: authLogout } = useAuth();
   const { toast } = useToast();
@@ -67,15 +69,15 @@ const ChatPage = () => {
 
   const handleSendMessage = async () => {
     if (!inputValue.trim()) return;
-    if (geminiApiKey) {
-      toast({
-        title: "API Key Missing",
-        description: "Please set your Gemini API key in settings.",
-        variant: "destructive",
-      });
-      handleOpenApiKeyModal();
-      return;
-    }
+    // if (!geminiApiKey) {
+    //   toast({
+    //     title: "API Key Missing",
+    //     description: "Please set your Gemini API key in settings.",
+    //     variant: "destructive",
+    //   });
+    //   handleOpenApiKeyModal();
+    //   return;
+    // }
 
     const userMessage = {
       type: "user",
@@ -88,7 +90,7 @@ const ChatPage = () => {
 
     try {
       // Call backend ask API with user question
-      const response = await fetch("http://localhost:5000/ask", {
+      const response = await fetch(`${backendUrl}/ask`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

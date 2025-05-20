@@ -4,6 +4,8 @@ import { useToast } from "@/components/ui/use-toast";
 // pdfjs-dist via CDN (ESM import)
 import * as pdfjsLib from "https://cdn.jsdelivr.net/npm/pdfjs-dist@5.2.133/+esm";
 
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
+
 export const usePdfHandling = (
   setPdfText,
   setPdfName,
@@ -14,7 +16,7 @@ export const usePdfHandling = (
   const fileInputRef = useRef(null);
 
   const uploadPdfToBackend = async (extractedText) => {
-    const response = await fetch("http://localhost:5000/upload_pdf", {
+    const response = await fetch(`${backendUrl}/upload_pdf`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text: extractedText }),
@@ -24,7 +26,7 @@ export const usePdfHandling = (
   };
 
   const clearPdfFromBackend = async () => {
-    const response = await fetch("http://localhost:5000/clear_pdf", {
+    const response = await fetch(`${backendUrl}/clear_pdf`, {
       method: "POST",
     });
     if (!response.ok) throw new Error("Failed to clear PDF content on backend");
