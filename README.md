@@ -40,31 +40,39 @@ git clone <repository-url>
 cd DocuChat_AI
 ```
 
-#### Install dependencies: *(in frontend and backend folders)*
+### 2. Setup Frontend
+#### Install dependencies:
 ```
 npm install
 ```
-
-#### Set up environment variables (.env file): *(in backend folder)*
-```bash
-GOOGLE_API_KEY=<your_google_api_key>
-```
-
-#### Set up environment variables (.env file): *(in frontend folder)*
+#### Set up environment variables (.env file):
 ```bash
 VITE_SUPABASE_URL=<supabase_url>
 VITE_SUPABASE_ANON_KEY=<supabase_anon_key>
 VITE_BACKEND_URL=<backend_url>
 ```
-
-#### Run the backend: *(in backend folder)*
-```
-uvicorn server:app --reload --port 5000
-```
-
-#### Run the frontend: *(in frontend folder)*
+#### Run the frontend:
 ```
 npm run dev
+```
+
+### 3. Setup Backend
+#### Create Virtual Environment
+```
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+#### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+#### Set up environment variables (.env file):
+```bash
+GOOGLE_API_KEY=<your_google_api_key>
+```
+#### Run the backend:
+```
+uvicorn server:app --reload --port 5000
 ```
 
 ---
